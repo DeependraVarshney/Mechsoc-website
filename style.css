@@ -287,6 +287,9 @@ font-size: 60px;
   transform: translate3d(0px, -5px, 0px);
   /* color: #316ce8; */
   }
+  a{
+    text-decoration: none;
+  }
 
 @media (max-width:870px){
   .container-events{
