@@ -184,6 +184,23 @@ background-color:#191e2b;
   padding-bottom: 10px;
   margin-bottom: 0%;
 }
+.gallerydiv{
+  margin:5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr ;
+  gap:2%
+}
+.photo img{
+  height: 100%;
+  width: 100%;
+}
+#Gallery h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(70%);
+}
 
 
 
