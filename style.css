@@ -403,12 +403,9 @@ font-size: 60px;
   align-items: center;
   gap: 20px;
 }
+.brain-gear{
+  display: none;
+ 
+}
+}
 
-}
-@media (max-width:991px){
-  .brain-gear{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
