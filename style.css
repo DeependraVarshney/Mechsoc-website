@@ -38,8 +38,22 @@ span{
 .btn-primary:hover{
   background-color: #160c02 !important;
 }
-#hero{
-  background-color: #191e2b;
+#hero {
+  background: linear-gradient(#0009,#0009),url(./photos/nit\ pic2.jpg) fixed top;
+    background-size: cover;
+    color: var(--primaryLight);
+    height: calc(100vh - 150px);
+    /* margin-top: 50px;
+    width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hero > div {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2%
 }
 #about{
   background-color: rgb(231, 230, 230);
@@ -387,12 +401,4 @@ font-size: 60px;
     justify-content: center;
     align-items: center;
   }
-}
-#hero {
-  background: linear-gradient(#0009,#0009),url(./photos/nit\ pic2.jpg) fixed top;
-    background-size: cover;
-    color: var(--primaryLight);
-    height: calc(100vh - 150px);
-    /* margin-top: 50px;
-    width: 100%; */
 }
