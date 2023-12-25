@@ -205,51 +205,71 @@ background-color:#191e2b;
 
 
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-#events h1{
+/* #events h1{
   transform: translateY(40px);
-}
+} */
 .container-events{
-    width:60%;
-    height: 80%;
-    margin: 10px auto;
+  width:80%;
+  height: 80%;
+  margin: 10px auto;
 }
 .corousel{
-    /* border:2px solid #ccc; */
-    height:400px;
-    overflow: hidden;
-    position: relative;
-    border-radius: 8px;
-    
+  /* border:2px solid #ccc; */
+  height:600px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  
 }
 .slider {
-    height:100%;
-    display:flex;
-    width:800%;
+  height:100%;
+  display:flex;
+  width:800%;
 /* border: 1px solid red; */
 /* transform :translate(-25%); */
 transition: all 0.3s;
 /* background-color: #e7e8ea; */
 box-shadow: #333;
 }
-.slider section{
-    flex-basis:100%;
+.slider section  {
+display: flex;
+justify-content: center;
+gap: 0;
+flex-basis:100%;
+padding: 0 50px 0 50px;
+}
+
+.slider section .event-content{
+ 
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 
-padding: 50px;
+padding-left: 50px;
 text-align: center;
 
 }
-.slider section h2 {
-    margin: 20px;
-   font-size: 26px;
+.image-event{
+height: 80%;
+width:100%;
+display: flex;
+align-items: center;
 }
-.slider section p{
-     margin: 20px;
+
+.slider section div h2 {
+  margin: 20px;
+ font-size: 26px;
 }
-.slider section button{
+.slider section div p{
+   margin: 20px;
+}
+
+.slider section div img{
+height: 100%;
+width: 100%;
+}
+.slider section div button{
 height: 40px;
 width: 120px;
 font-size: 18px;
