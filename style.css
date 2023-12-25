@@ -125,7 +125,13 @@ span{
 @import url(//fonts.googleapis.com/css?family=Montserrat:300,500);
 
 #team{
-background-color: #191e2b;
+  background: linear-gradient(#0009,#0009),url(./photos/pic\ team1.jpg) fixed top;
+
+  background-size: cover;
+  color: var(--primaryLight);
+  /* height: calc(100vh - 150px); */
+  margin-top: 50px;
+  width: 100%;
 }
 
 .team4 {
@@ -175,8 +181,31 @@ padding: 3% 10% 3% 10%;
 }
 
 #footer {
-background-color:#191e2b; 
-}
+  background-color:#191e2b;
+  padding-top: 4%;
+  }
+  #footer .footer-row{
+    display: flex;
+    /* flex-wrap: nowrap; */
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-section1{
+    padding: 5%;
+    background-color: #272f42;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-section1 h1{
+    color: #c78445 ;
+    text-align: center;
+  }
+  .footer-section1 p{
+    text-align: center;
+    padding: 2% 0 4% 0;
+  }
 .bottom{
   display: flex;
   justify-content: center;
@@ -348,4 +377,12 @@ font-size: 60px;
     justify-content: center;
     align-items: center;
   }
+}
+#hero {
+  background: linear-gradient(#0009,#0009),url(./photos/nit\ pic2.jpg) fixed top;
+    background-size: cover;
+    color: var(--primaryLight);
+    height: calc(100vh - 150px);
+    /* margin-top: 50px;
+    width: 100%; */
 }
