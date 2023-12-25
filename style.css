@@ -394,12 +394,14 @@ font-size: 60px;
 .photo-nine{
   display: none;
 }
+
 #footer .footer-row{
   display: flex;
   /* flex-wrap: nowrap; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 }
