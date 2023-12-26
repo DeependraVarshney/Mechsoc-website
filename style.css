@@ -16,8 +16,9 @@ body{
 
 @media (max-width:991px){
     .sidebar{
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255,0.5);
         backdrop-filter: blur(10px);
+        
     }
 }
 /* #hero{ */
@@ -54,6 +55,7 @@ span{
     justify-content: center;
     align-items: center;
     padding:2%;
+    /* background:radial-gradient(#131313); */
 }
 #about{
   background-color: rgb(231, 230, 230);
@@ -242,7 +244,8 @@ padding: 3% 10% 3% 10%;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(70%);
+  /* transform: translateY(70%); */
+  margin: 20px 0 20px 0;
 }
 
 
@@ -289,7 +292,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 
-padding-left: 50px;
+padding-bottom: 50px;
 text-align: center;
 
 }
@@ -298,6 +301,33 @@ height: 80%;
 width:100%;
 display: flex;
 align-items: center;
+border-radius: 5px;
+--b: .5em; /* border width */
+	--c: 3em; /* corner size */
+	--r: 2em; /* corner rounding */
+	position: relative;
+	margin: 1em auto;
+	border: solid var(--b) transparent;
+	padding: 1em;
+	max-width: 23em;
+	/* font: 1.25em ubuntu, sans-serif; */
+  &::before {
+		position: absolute;
+		z-index: -1;
+		inset: calc(-1*var(--b));
+		border: inherit;
+		border-radius: var(--r);
+		background: linear-gradient(orange, deeppink, purple) border-box;
+		--corner: 
+			conic-gradient(from -90deg at var(--c) var(--c), red 25%, #0000 0) 
+				0 0/ calc(100% - var(--c))  calc(100% - var(--c)) border-box;
+		--inner: conic-gradient(red 0 0) padding-box;
+		-webkit-mask: var(--corner), var(--inner);
+		-webkit-mask-composite: source-out;
+						mask: var(--corner) subtract, var(--inner);
+		content: ''
+	}
+
 }
 
 .slider section div h2 {
@@ -327,6 +357,7 @@ background-color: #c78445;
 cursor: pointer;
 transform: translateY(-50%);
 font-size: 60px;
+color: #c78445;
 }
 .arrow.left{
     left:10px;
@@ -407,5 +438,17 @@ font-size: 60px;
   display: none;
  
 }
+.slider section  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  flex-basis:100%;
+  padding: 0 50px 0 50px;
+  }
+}
+.slider section .event-content{
+  position: relative;
+  width: auto;
 }
 
