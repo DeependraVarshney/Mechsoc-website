@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 body{
     background-color:white;
+	    font-family: victor mono;
 }
 .navbar{
     z-index: 100;
